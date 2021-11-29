@@ -1,4 +1,4 @@
-update=24/11/2021 14:56:16
+update=26/11/2021 15:51:33
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=QSIT_PayloadPSDmodule.net
+LastNetListRead=QSIT_PayloadADCboard.net
 CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
@@ -67,7 +67,7 @@ OthersTextUpright=1
 SolderMaskClearance=0.05
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=-0
+SolderPasteRatio=0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
@@ -237,7 +237,7 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.2
+Clearance=0.12
 TrackWidth=0.25
 ViaDiameter=0.8
 ViaDrill=0.4
