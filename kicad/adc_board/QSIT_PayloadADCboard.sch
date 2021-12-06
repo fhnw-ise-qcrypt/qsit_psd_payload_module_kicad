@@ -483,17 +483,6 @@ F 3 "~" H 8100 1250 50  0001 C CNN
 	1    8100 1250
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R R3
-U 1 1 61A6A943
-P 7700 1150
-F 0 "R3" V 7750 1350 50  0000 C CNN
-F 1 "10R" V 7700 1150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7630 1150 50  0001 C CNN
-F 3 "~" H 7700 1150 50  0001 C CNN
-	1    7700 1150
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	1100 6250 1100 6200
 $Comp
@@ -11522,8 +11511,6 @@ Text GLabel 7000 4100 2    50   Input ~ 0
 TIM14_CH1
 Wire Wire Line
 	5050 5500 4850 5500
-Text GLabel 7150 5000 2    50   Input ~ 0
-BOOT1
 Wire Wire Line
 	6450 4900 6650 4900
 Wire Wire Line
@@ -11559,10 +11546,10 @@ Text Notes 9050 3500 0    50   ~ 0
 Text Notes 6100 1850 0    50   ~ 0
 9P flat cable
 $Comp
-L Device:R R?
+L Device:R R20
 U 1 1 623954BA
 P 4750 3550
-F 0 "R?" H 4900 3600 50  0000 L CNN
+F 0 "R20" H 4900 3600 50  0000 L CNN
 F 1 "10k" H 4820 3505 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4680 3550 50  0001 C CNN
 F 3 "~" H 4750 3550 50  0001 C CNN
@@ -11571,57 +11558,27 @@ F 3 "~" H 4750 3550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5050 3400 4750 3400
-Wire Wire Line
-	4750 3400 4550 3400
 Connection ~ 4750 3400
 $Comp
-L power:GND #PWR?
+L power:GND #PWR041
 U 1 1 623ABA27
 P 4750 3700
-F 0 "#PWR?" H 4750 3450 50  0001 C CNN
+F 0 "#PWR041" H 4750 3450 50  0001 C CNN
 F 1 "GND" H 4850 3550 50  0000 R CNN
 F 2 "" H 4750 3700 50  0001 C CNN
 F 3 "" H 4750 3700 50  0001 C CNN
 	1    4750 3700
 	1    0    0    -1  
 $EndComp
-Text GLabel 4550 3400 0    50   Input ~ 0
+Text GLabel 4300 3400 0    50   Input ~ 0
 BOOT0
-$Comp
-L Device:R R?
-U 1 1 623C7134
-P 6900 5100
-F 0 "R?" V 6850 5250 50  0000 L CNN
-F 1 "10k" V 6900 5050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6830 5100 50  0001 C CNN
-F 3 "~" H 6900 5100 50  0001 C CNN
-	1    6900 5100
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	6750 5100 6700 5100
-Wire Wire Line
-	6700 5100 6650 5050
-Wire Wire Line
-	7050 5100 7250 5100
-$Comp
-L power:GND #PWR?
-U 1 1 623E97D1
-P 7250 5100
-F 0 "#PWR?" H 7250 4850 50  0001 C CNN
-F 1 "GND" V 7250 4950 50  0000 R CNN
-F 2 "" H 7250 5100 50  0001 C CNN
-F 3 "" H 7250 5100 50  0001 C CNN
-	1    7250 5100
-	0    -1   -1   0   
-$EndComp
 Text Notes 1250 3500 0    50   ~ 0
 MCLK 4.9152 MHz generator
 $Comp
-L Oscillator:ECS-2520MV-xxx-xx X?
+L Oscillator:ECS-2520MV-xxx-xx X1
 U 1 1 61AAE6AA
 P 1150 3750
-F 0 "X?" H 1550 3600 50  0000 L CNN
+F 0 "X1" H 1550 3600 50  0000 L CNN
 F 1 "ECS-2520MVLC-049-BN" H 1300 3450 50  0000 L CNN
 F 2 "Oscillator:Oscillator_SMD_ECS_2520MV-xxx-xx-4Pin_2.5x2.0mm" H 1600 3400 50  0001 C CNN
 F 3 "https://www.ecsxtal.com/store/pdf/ECS-2520MV.pdf" H 975 3875 50  0001 C CNN
@@ -11629,10 +11586,10 @@ F 3 "https://www.ecsxtal.com/store/pdf/ECS-2520MV.pdf" H 975 3875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR040
 U 1 1 61AB5159
 P 1150 3450
-F 0 "#PWR?" H 1150 3300 50  0001 C CNN
+F 0 "#PWR040" H 1150 3300 50  0001 C CNN
 F 1 "+3V3" H 1150 3600 50  0000 C CNN
 F 2 "" H 1150 3450 50  0001 C CNN
 F 3 "" H 1150 3450 50  0001 C CNN
@@ -11640,10 +11597,10 @@ F 3 "" H 1150 3450 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR042
 U 1 1 61AB6346
 P 1150 4050
-F 0 "#PWR?" H 1150 3800 50  0001 C CNN
+F 0 "#PWR042" H 1150 3800 50  0001 C CNN
 F 1 "GND" H 1250 3900 50  0000 R CNN
 F 2 "" H 1150 4050 50  0001 C CNN
 F 3 "" H 1150 4050 50  0001 C CNN
@@ -11656,8 +11613,6 @@ Wire Wire Line
 	1700 3750 1550 3750
 NoConn ~ 750  3750
 Wire Wire Line
-	7450 1150 7550 1150
-Wire Wire Line
 	7450 1250 7950 1250
 Wire Wire Line
 	7450 1350 7550 1350
@@ -11669,8 +11624,6 @@ Wire Wire Line
 	7850 1550 8250 1550
 Wire Wire Line
 	7950 1450 7450 1450
-Wire Wire Line
-	7850 1150 8250 1150
 Wire Wire Line
 	8250 1350 7850 1350
 Wire Wire Line
@@ -11717,21 +11670,10 @@ Connection ~ 9800 1400
 Wire Wire Line
 	2950 5200 2700 5200
 $Comp
-L Device:Crystal Y?
-U 1 1 61DA8492
-P 4400 4450
-F 0 "Y?" V 4354 4581 50  0000 L CNN
-F 1 "8MHz" V 4445 4581 50  0000 L CNN
-F 2 "" H 4400 4450 50  0001 C CNN
-F 3 "~" H 4400 4450 50  0001 C CNN
-	1    4400 4450
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C?
+L Device:C C19
 U 1 1 61DC61B7
 P 4200 4300
-F 0 "C?" V 4000 4450 50  0000 C CNN
+F 0 "C19" V 4000 4450 50  0000 C CNN
 F 1 "12p" V 4100 4450 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4238 4150 50  0001 C CNN
 F 3 "~" H 4200 4300 50  0001 C CNN
@@ -11741,10 +11683,10 @@ F 5 "16V" H 4200 4300 50  0001 C CNN "Voltage"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C20
 U 1 1 61DC7D49
 P 4200 4600
-F 0 "C?" V 4000 4750 50  0000 C CNN
+F 0 "C20" V 4000 4750 50  0000 C CNN
 F 1 "12p" V 4100 4750 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4238 4450 50  0001 C CNN
 F 3 "~" H 4200 4600 50  0001 C CNN
@@ -11754,16 +11696,12 @@ F 5 "16V" H 4200 4600 50  0001 C CNN "Voltage"
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	4400 4600 4350 4600
-Wire Wire Line
-	4400 4300 4350 4300
-Wire Wire Line
 	4050 4300 4050 4450
 $Comp
-L power:GND #PWR?
+L power:GND #PWR043
 U 1 1 61DE5BC5
 P 4050 4450
-F 0 "#PWR?" H 4050 4200 50  0001 C CNN
+F 0 "#PWR043" H 4050 4200 50  0001 C CNN
 F 1 "GND" V 4050 4300 50  0000 R CNN
 F 2 "" H 4050 4450 50  0001 C CNN
 F 3 "" H 4050 4450 50  0001 C CNN
@@ -11773,7 +11711,6 @@ $EndComp
 Connection ~ 4050 4450
 Wire Wire Line
 	4050 4450 4050 4600
-Connection ~ 4400 4600
 $Comp
 L MCU_ST_STM32F3:STM32F373CCTx U3
 U 1 1 61AA1FCD
@@ -11786,17 +11723,6 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5050 4700 4900 4700
-Wire Wire Line
-	4900 4700 4850 4650
-Wire Wire Line
-	4850 4650 4850 4350
-Wire Wire Line
-	4850 4350 4800 4300
-Wire Wire Line
-	4800 4300 4400 4300
-Connection ~ 4400 4300
-Wire Wire Line
 	4700 4600 4750 4650
 Wire Wire Line
 	4750 4650 4750 4750
@@ -11804,8 +11730,6 @@ Wire Wire Line
 	4750 4750 4800 4800
 Wire Wire Line
 	4800 4800 5050 4800
-Wire Wire Line
-	4400 4600 4700 4600
 NoConn ~ 1600 1450
 NoConn ~ 1600 1550
 Wire Notes Line
@@ -11824,13 +11748,6 @@ Wire Notes Line
 	600  4500 600  7700
 Wire Notes Line
 	600  7700 3300 7700
-Wire Wire Line
-	6450 5000 6650 5000
-Wire Wire Line
-	6650 5050 6650 5000
-Connection ~ 6650 5000
-Wire Wire Line
-	6650 5000 7150 5000
 Wire Notes Line
 	11100 6450 11100 4900
 Wire Notes Line
@@ -11909,14 +11826,94 @@ MEMS Driver
 Text Notes 3450 6750 0    100  ~ 0
 Mechanical
 $Comp
-L Graphic:SYM_Flash_Small #SYM?
+L Graphic:SYM_Flash_Small #SYM1
 U 1 1 62104C7E
 P 8150 5350
-F 0 "#SYM?" V 8060 5350 50  0001 C CNN
+F 0 "#SYM1" V 8060 5350 50  0001 C CNN
 F 1 "SYM_Flash_Small" V 8240 5350 50  0001 C CNN
 F 2 "" H 8150 5325 50  0001 C CNN
 F 3 "~" H 8550 5250 50  0001 C CNN
 	1    8150 5350
 	1    0    0    -1  
 $EndComp
+Wire Notes Line style solid
+	3700 3000 3700 3300
+Text Notes 3450 3300 0    50   ~ 0
+BOOT1 BOOT0 \n   x     0     flash memory\n   0     1     system memory\n   1     1     embedded SRAM
+Wire Notes Line style solid
+	4000 3000 4000 3300
+Wire Notes Line style solid
+	3450 3050 4650 3050
+$Comp
+L Connector:TestPoint TP1
+U 1 1 61B364E0
+P 4300 3500
+F 0 "TP1" V 4200 3600 50  0000 C CNN
+F 1 "TestPoint" V 4404 3572 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 4500 3500 50  0001 C CNN
+F 3 "~" H 4500 3500 50  0001 C CNN
+	1    4300 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4300 3400 4450 3400
+Wire Wire Line
+	4300 3500 4350 3500
+Wire Wire Line
+	4350 3500 4450 3400
+Connection ~ 4450 3400
+Wire Wire Line
+	4450 3400 4750 3400
+Text Notes 1300 2300 0    39   ~ 0
+https://www.digikey.ch/de/products/detail/olimex-ltd/ARM-JTAG-20-10/3471401
+Text Notes 1650 1800 0    50   ~ 0
+double check pinout
+$Comp
+L Device:Crystal_GND24 Y1
+U 1 1 61C03ABE
+P 4450 4450
+F 0 "Y1" V 4650 4550 50  0000 L CNN
+F 1 "Crystal_GND24" V 4200 4500 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_TXC_7M-4Pin_3.2x2.5mm" H 4450 4450 50  0001 C CNN
+F 3 "~" H 4450 4450 50  0001 C CNN
+	1    4450 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 4300 4450 4300
+Wire Wire Line
+	4350 4600 4450 4600
+Connection ~ 4450 4300
+Connection ~ 4450 4600
+Wire Wire Line
+	4250 4450 4050 4450
+Wire Wire Line
+	4450 4600 4700 4600
+$Comp
+L power:GND #PWR044
+U 1 1 61C17303
+P 4650 4450
+F 0 "#PWR044" H 4650 4200 50  0001 C CNN
+F 1 "GND" V 4650 4350 50  0000 R CNN
+F 2 "" H 4650 4450 50  0001 C CNN
+F 3 "" H 4650 4450 50  0001 C CNN
+	1    4650 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 4700 5000 4700
+Wire Wire Line
+	5000 4700 4950 4650
+Wire Wire Line
+	4950 4650 4950 4350
+Wire Wire Line
+	4950 4350 4900 4300
+Wire Wire Line
+	4450 4300 4900 4300
+Wire Wire Line
+	7450 1150 8250 1150
+Text GLabel 6650 3900 2    50   Input ~ 0
+MEMS_OUT_EN
+Wire Wire Line
+	6650 3900 6450 3900
 $EndSCHEMATC
