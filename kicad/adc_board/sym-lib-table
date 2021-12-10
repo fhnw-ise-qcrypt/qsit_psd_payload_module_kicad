@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name QSIT_PayloadADCboard-rescue)(type Legacy)(uri ${KIPRJMOD}/QSIT_PayloadADCboard-rescue.lib)(options "")(descr ""))
+)
