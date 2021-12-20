@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name QSIT_PayloadPSDmodule-rescue)(type Legacy)(uri ${KIPRJMOD}/QSIT_PayloadPSDmodule-rescue.lib)(options "")(descr ""))
+)

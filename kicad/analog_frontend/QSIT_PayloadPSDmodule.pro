@@ -1,4 +1,4 @@
-update=03/12/2021 17:24:03
+update=20.12.2021 11:42:12
 version=1
 last_client=kicad
 [general]
@@ -12,9 +12,19 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
+[schematic_editor]
+version=1
+PageLayoutDescrFile=C:/Users/simon/Documents/KiCAD/templates/fhnw_uige_qsit.kicad_wks
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceAjustPassiveValues=0
+LabSize=100
+ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
-PageLayoutDescrFile=
+PageLayoutDescrFile=C:/Users/simon/Documents/KiCAD/templates/fhnw_uige_qsit.kicad_wks
 LastNetListRead=QSIT_PayloadPSDmodule.net
 CopperLayerCount=4
 BoardThickness=1.6
@@ -57,7 +67,7 @@ OthersTextUpright=1
 SolderMaskClearance=0.05
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=-0
+SolderPasteRatio=0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
@@ -247,13 +257,3 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceAjustPassiveValues=0
-LabSize=100
-ERC_TestSimilarLabels=1
