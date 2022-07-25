@@ -1051,9 +1051,9 @@ F 3 "~" H 1750 1350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2300 950  2050 950 
-Text GLabel 2200 1250 2    50   Input ~ 0
-SWDIO
 Text GLabel 2200 1350 2    50   Input ~ 0
+SWDIO
+Text GLabel 2200 1250 2    50   Input ~ 0
 SWCLK
 $Comp
 L Device:R R12
