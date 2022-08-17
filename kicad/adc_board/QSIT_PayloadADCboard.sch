@@ -1505,10 +1505,6 @@ LED2
 Text GLabel 6500 5500 2    50   Input ~ 0
 LED1
 Wire Wire Line
-	6350 5700 6150 5700
-Text GLabel 6350 5700 2    50   Input ~ 0
-TIM17_CH1
-Wire Wire Line
 	6150 4500 6350 4500
 Wire Wire Line
 	6350 4400 6150 4400

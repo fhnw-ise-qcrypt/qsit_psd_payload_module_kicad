@@ -129,8 +129,6 @@ Wire Wire Line
 	3900 2150 3800 2250
 Wire Wire Line
 	3800 2250 3450 2250
-Wire Wire Line
-	3000 2250 2950 2200
 $Comp
 L Device:R R10
 U 1 1 61A27E71
@@ -178,11 +176,7 @@ Wire Wire Line
 Wire Wire Line
 	4750 2850 4700 2900
 Wire Wire Line
-	2400 2900 2350 2850
-Wire Wire Line
 	4750 2600 4750 2850
-Wire Wire Line
-	2350 1800 2350 2850
 Wire Wire Line
 	4700 2900 4900 2900
 Wire Wire Line
@@ -1435,7 +1429,7 @@ L Device:R R30
 U 1 1 61B2A06F
 P 10100 3900
 F 0 "R30" V 10000 4050 50  0000 C CNN
-F 1 "20k" V 10000 3850 50  0000 C CNN
+F 1 "40k" V 10000 3850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 10030 3900 50  0001 C CNN
 F 3 "~" H 10100 3900 50  0001 C CNN
 	1    10100 3900
@@ -1457,7 +1451,7 @@ L Device:R R38
 U 1 1 61B2B5A7
 P 10100 5800
 F 0 "R38" V 10000 5950 50  0000 C CNN
-F 1 "20k" V 10000 5750 50  0000 C CNN
+F 1 "40k" V 10000 5750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 10030 5800 50  0001 C CNN
 F 3 "~" H 10100 5800 50  0001 C CNN
 	1    10100 5800
@@ -1488,7 +1482,7 @@ L Device:R R32
 U 1 1 61B8F252
 P 7900 4600
 F 0 "R32" V 7800 4750 50  0000 C CNN
-F 1 "20k" V 7800 4550 50  0000 C CNN
+F 1 "40k" V 7800 4550 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7830 4600 50  0001 C CNN
 F 3 "~" H 7900 4600 50  0001 C CNN
 	1    7900 4600
@@ -1499,7 +1493,7 @@ L Device:R R33
 U 1 1 61B92988
 P 7900 4750
 F 0 "R33" V 7800 4900 50  0000 C CNN
-F 1 "10k" V 7800 4700 50  0000 C CNN
+F 1 "20k" V 7800 4700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7830 4750 50  0001 C CNN
 F 3 "~" H 7900 4750 50  0001 C CNN
 	1    7900 4750
@@ -1540,7 +1534,7 @@ L Device:R R29
 U 1 1 61BD19C9
 P 10100 3700
 F 0 "R29" V 10000 3850 50  0000 C CNN
-F 1 "10k" V 10000 3650 50  0000 C CNN
+F 1 "20k" V 10000 3650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 10030 3700 50  0001 C CNN
 F 3 "~" H 10100 3700 50  0001 C CNN
 	1    10100 3700
@@ -1568,7 +1562,7 @@ L Device:R R39
 U 1 1 61BFC046
 P 10100 6000
 F 0 "R39" V 10000 6150 50  0000 C CNN
-F 1 "10k" V 10000 5950 50  0000 C CNN
+F 1 "20k" V 10000 5950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 10030 6000 50  0001 C CNN
 F 3 "~" H 10100 6000 50  0001 C CNN
 	1    10100 6000
@@ -1626,7 +1620,7 @@ Text Label 1350 5450 0    50   ~ 0
 X1a
 Text Label 1350 4550 0    50   ~ 0
 X2a
-Text Notes 2750 2450 0    50   ~ 0
+Text Notes 2350 1450 0    50   ~ 0
 4x4mm PSD
 Text Notes 4250 950  0    50   ~ 10
 preamp stage\n(trans-impedance)
@@ -1653,7 +1647,7 @@ sum = - ( (X2+Y2)+(X1+Y1) )
 Text Notes 8550 3700 0    50   ~ 10
 gain / offset stage
 Text Notes 7050 4100 0    50   ~ 0
-all signals have +/- 5V signal swing\nconvert to 2.5V +/- 2.5V swing
+all signals have +/- 5V signal swing\nconvert to 1.25V +/- 1.25V swing
 Text Notes 7250 4400 0    50   ~ 0
 can later be adjusted as needed\ne.g. if signal swing is only +/- 4V\n--> change signal gain resistors
 $Comp
@@ -1868,23 +1862,18 @@ Text Notes 8400 5200 0    50   ~ 0
 Wire Wire Line
 	3400 1750 3450 1750
 Connection ~ 3450 1750
-Wire Wire Line
-	3000 2250 3450 2250
 Connection ~ 3450 2250
-Wire Wire Line
-	2400 2900 4700 2900
-Connection ~ 4700 2900
 Wire Wire Line
 	4700 1100 3000 1100
 Connection ~ 4700 1100
 Wire Wire Line
 	1400 1650 1300 1650
 Connection ~ 1300 1650
-Text Label 2550 2900 0    50   ~ 0
+Text Label 3050 2900 0    50   ~ 0
 PSD_Y1
 Text Label 3150 1100 0    50   ~ 0
 PSD_Y2
-Text Label 3000 2250 0    50   ~ 0
+Text Label 2450 2250 0    50   ~ 0
 PSD_X1
 Text Label 3450 1750 0    50   ~ 0
 PSD_X2
@@ -1982,17 +1971,6 @@ F 3 "" H 9400 5500 50  0001 C CNN
 	1    9550 4850
 	0    -1   -1   0   
 $EndComp
-$Comp
-L simonmartin_kicad_lib:PSDS5990-01 U1
-U 1 1 61BA2C29
-P 2950 1750
-F 0 "U1" H 3050 2150 50  0000 L CNN
-F 1 "PSDS5990-01" H 3000 2050 50  0000 L CNN
-F 2 "simonmartin_kicad_lib:HAMAMATSU_PSD_S599001_4mm" H 2400 2050 50  0001 C CNN
-F 3 "" H 5050 1550 50  0001 C CNN
-	1    2950 1750
-	1    0    0    -1  
-$EndComp
 Text Notes 1200 5650 1    50   ~ 0
 these signals do not make sense\nto directly go to the ADC because they \nmay have negative output swing
 $Comp
@@ -2060,4 +2038,28 @@ Wire Wire Line
 Wire Wire Line
 	9250 5850 9250 5600
 Connection ~ 9250 5600
+$Comp
+L simonmartin_kicad_lib:PSDS5990-01 U1
+U 1 1 61BA2C29
+P 2950 1750
+F 0 "U1" H 3050 2150 50  0000 L CNN
+F 1 "PSDS5990-01" H 3000 2050 50  0000 L CNN
+F 2 "simonmartin_kicad_lib:HAMAMATSU_PSD_S599001_4mm" H 2400 2050 50  0001 C CNN
+F 3 "" H 5050 1550 50  0001 C CNN
+	1    2950 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2900 3000 2900
+Wire Wire Line
+	3000 2900 2950 2850
+Wire Wire Line
+	2950 2850 2950 2200
+Connection ~ 4700 2900
+Wire Wire Line
+	2400 2250 2350 2200
+Wire Wire Line
+	2350 2200 2350 1800
+Wire Wire Line
+	2400 2250 3450 2250
 $EndSCHEMATC
